@@ -126,7 +126,7 @@ your application when user press "More Info" button :
 `MapsWithMeApi.isMapsWithMeInstalled(Context)` will return `true` if user has *Lite* or *Pro* version that supports API call installed.
 
 #### Which versions of MapsWithMe support API calls?
-Both *Lite* and *Pro* versions since 2.4.0 are support API calls.
+Both *Lite* and *Pro* versions since 2.4.0 and above support API calls.
 
 #### What will happen if I call for `MapsWithMeApi.showPoint()` but MapsWithMe application is not installed?
 Nothing serious. API library will show simple dialog with gentle offer to download MapsWithMe. You can see how it looks like below. ![Please install us](site/images/dlg.png)
