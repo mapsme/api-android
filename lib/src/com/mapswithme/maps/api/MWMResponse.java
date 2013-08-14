@@ -52,16 +52,21 @@ public class MWMResponse
   public static MWMResponse extractFromIntent(Context context, Intent intent)
   {
     final MWMResponse response = new MWMResponse();
-    // parse status
     // parse point
-    final double lat = intent.getDoubleExtra(Const.EXTRA_MWM_RESPONSE_POINT_LAT, 0);
-    final double lon = intent.getDoubleExtra(Const.EXTRA_MWM_RESPONSE_POINT_LON, 0);
+    final double lat = intent.getDoubleExtra(Const.EXTRA_MWM_RESPONSE_POINT_LAT, INVALID_LL);
+    final double lon = intent.getDoubleExtra(Const.EXTRA_MWM_RESPONSE_POINT_LON, INVALID_LL);
     final String name = intent.getStringExtra(Const.EXTRA_MWM_RESPONSE_POINT_NAME);
     final String id = intent.getStringExtra(Const.EXTRA_MWM_RESPONSE_POINT_ID);
-    response.mPoint = new MWMPoint(lat, lon, name, id);
+
+    if (lat != INVALID_LL && lon != INVALID_LL)
+      response.mPoint = new MWMPoint(lat, lon, name, id);
+    else
+      response.mPoint = null;
 
     return response;
   }
+
+  private final static double INVALID_LL =  Double.MIN_VALUE;
 
   private MWMResponse() {}
 }
