@@ -45,7 +45,7 @@ public class Const
 
 
   public static final String ACTION_MWM_REQUEST = AUTHORITY + ".request";
-  static final int API_VERSION = 1;
+  static final int API_VERSION = 2;
   static final String CALLBACK_PREFIX = "mapswithme.client.";
 
   private Const() {}
