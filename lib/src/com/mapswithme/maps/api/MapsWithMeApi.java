@@ -27,6 +27,7 @@ import android.app.PendingIntent;
 import android.content.Context;
 import android.content.Intent;
 import android.content.pm.ActivityInfo;
+import android.net.Uri;
 
 
 public final class MapsWithMeApi
@@ -40,6 +41,19 @@ public final class MapsWithMeApi
    * Least detailed level, continents are seen.
    */
   public static final double ZOOM_MIN = 1;
+
+
+  public static void showMapsWithMeUrl(Activity caller, PendingIntent pendingIntent, double zoomLevel, String url)
+  {
+    final Uri uri = Uri.parse(url);
+    final String latlon[] = uri.getQueryParameter("ll").split(",");
+    final double lat = Double.parseDouble(latlon[0]);
+    final double lon = Double.parseDouble(latlon[1]);
+    final String name = uri.getQueryParameter("n");
+    final String id = uri.getQueryParameter("id");
+
+    showPointsOnMap(caller, name, zoomLevel, pendingIntent, new MWMPoint(lat, lon, name, id));
+  }
 
   public static void sendRequest(Activity caller, MwmRequest request)
   {
