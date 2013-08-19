@@ -16,11 +16,11 @@ public class MwmRequest
 {
 
   // **
-  List<MWMPoint> mPoints    = new ArrayList<MWMPoint>();
-  PendingIntent  mPendingIntent;
-  String         mTitle;
-  double         mZoomLevel = 1;
-  boolean        mReturnOnBalloonClick;
+  private List<MWMPoint> mPoints    = new ArrayList<MWMPoint>();
+  private PendingIntent  mPendingIntent;
+  private String         mTitle;
+  private double         mZoomLevel = 1;
+  private boolean        mReturnOnBalloonClick;
   // **
 
   public MwmRequest setTitle(String title)
