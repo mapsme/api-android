@@ -135,6 +135,15 @@ public final class MapsWithMeApi
     sendRequest(caller, request);
   }
 
+  public static void pickPoint(Activity caller, String title, PendingIntent pi)
+  {
+    final MwmRequest request = new MwmRequest()
+                                    .setTitle(title)
+                                    .setPickPointMode(true)
+                                    .setPendingIntent(pi);
+    sendRequest(caller, request);
+  }
+
   /**
    * Detects if any version (Lite, Pro) of MapsWithMe, which supports API calls
    * are installed on the device.
