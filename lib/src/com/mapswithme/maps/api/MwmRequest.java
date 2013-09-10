@@ -22,7 +22,17 @@ public class MwmRequest
   private double         mZoomLevel = 1;
   private boolean        mReturnOnBalloonClick;
   private boolean        mPickPoint = false;
+  private String         mCustomButtonName = "";
   // **
+
+  public MwmRequest setCustomButtonName(String buttonName)
+  {
+    if (buttonName != null)
+      mCustomButtonName = buttonName;
+    else
+      mCustomButtonName = "";
+    return this;
+  }
 
   public MwmRequest setTitle(String title)
   {
@@ -30,7 +40,7 @@ public class MwmRequest
     return this;
   }
 
-  MwmRequest setPickPointMode(boolean pickPoint)
+  public MwmRequest setPickPointMode(boolean pickPoint)
   {
     mPickPoint = pickPoint;
     return this;
@@ -84,6 +94,8 @@ public class MwmRequest
     mwmIntent.putExtra(Const.EXTRA_RETURN_ON_BALLOON_CLICK, mReturnOnBalloonClick);
     // pick point
     mwmIntent.putExtra(Const.EXTRA_PICK_POINT, mPickPoint);
+    // custom button name
+    mwmIntent.putExtra(Const.EXTRA_CUSTOM_BUTTON_NAME, mCustomButtonName);
 
     final boolean hasIntent = mPendingIntent != null;
     mwmIntent.putExtra(Const.EXTRA_HAS_PENDING_INTENT, hasIntent);
