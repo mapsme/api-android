@@ -27,10 +27,7 @@ public class MwmRequest
 
   public MwmRequest setCustomButtonName(String buttonName)
   {
-    if (buttonName != null)
-      mCustomButtonName = buttonName;
-    else
-      mCustomButtonName = "";
+    mCustomButtonName = buttonName != null ? buttonName : "";
     return this;
   }
 
