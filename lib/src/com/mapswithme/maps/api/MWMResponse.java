@@ -22,12 +22,14 @@
 ******************************************************************************/
 package com.mapswithme.maps.api;
 
+import android.app.DownloadManager.Request;
 import android.content.Context;
 import android.content.Intent;
 
 public class MWMResponse
 {
   private MWMPoint mPoint;
+  private double   mZoomLevel;
 
   /**
    *
@@ -35,6 +37,7 @@ public class MWMResponse
    */
   public MWMPoint getPoint()     { return mPoint; }
   public boolean  hasPoint()     { return mPoint != null; }
+  public double   getZoomLevel() { return mZoomLevel; }
 
   @Override
   public String toString()
@@ -57,6 +60,9 @@ public class MWMResponse
     final double lon = intent.getDoubleExtra(Const.EXTRA_MWM_RESPONSE_POINT_LON, INVALID_LL);
     final String name = intent.getStringExtra(Const.EXTRA_MWM_RESPONSE_POINT_NAME);
     final String id = intent.getStringExtra(Const.EXTRA_MWM_RESPONSE_POINT_ID);
+
+    // parse additional info
+    response.mZoomLevel = intent.getDoubleExtra(Const.EXTRA_MWM_RESPONSE_ZOOM, 9);
 
     if (lat != INVALID_LL && lon != INVALID_LL)
       response.mPoint = new MWMPoint(lat, lon, name, id);
