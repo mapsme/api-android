@@ -11,7 +11,8 @@ provides interface for client application to perform next tasks:
 Thus, you can provide **two way communication between your application and MapsWithMe**,
 using MapsWithMe to show points of interest (POI) and providing more information in your app.
 
-Please refer to [sample application][linkSampleSource] for demo.
+Please refer to [sample application][linkSampleSource] for demo or see
+our [travel guide apps][linkTravelGuides] as an API integration example.
 
 ## Prerequisites
 
@@ -165,3 +166,4 @@ THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND 
 [linkRespClass]: lib/src/com/mapswithme/maps/api/MWMResponse.java  "MWMResponse.java"
 [linkSampleSource]: https://github.com/mapswithme/api-android/tree/master/sample-app-capitals "Api Source Code"
 [linkSampleGooglePlay]: http://play.google.com/store/apps/details?id=com.mapswithme.capitals "Api Demo .apk"
+[linkTravelGuides]: http://www.guidewithme.com
