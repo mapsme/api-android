@@ -79,7 +79,7 @@ your application when user press "More Info" button :
     // Here is how to pass points with ID ant PendingIntent
     void showMultiplePointsWithPendingIntent(List<SomeDomainObject> list, PendingIntent pendingIntent)
     {
-      // Convert objects to MMWPoints
+      // Convert objects to MWMPoints
       final MWMPoint[] points = new MWMPoint[list.length];
       for (int i = 0; i < list.size; i++)
       {
