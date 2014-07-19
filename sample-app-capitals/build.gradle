@@ -1,0 +1,19 @@
+apply plugin: 'android'
+
+android {
+
+  // Define these properties in the gradle.properties file in the root project folder
+  compileSdkVersion propTargetSdkVersion.toInteger()
+  buildToolsVersion propBuildToolsVersion
+
+  defaultConfig {
+    minSdkVersion propMinSdkVersion.toInteger()
+    targetSdkVersion propTargetSdkVersion.toInteger()
+  }
+
+  sourceSets.main {
+    manifest.srcFile 'AndroidManifest.xml'
+    java.srcDirs = ['src']
+    res.srcDirs = ['res']
+  }
+}

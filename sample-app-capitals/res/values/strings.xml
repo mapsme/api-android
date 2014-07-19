@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <string name="app_name">MapsWithMeCapitals</string>
-    <string name="show_all">Show All Capitals with MapsWithMe</string>
-    <string name="open_with_mapswithme">Open With MapsWithMe</string>
+    <string name="app_name">maps.me capitals</string>
+    <string name="show_all">Show all capitals with maps.me</string>
+    <string name="open_with_mapswithme">Open with maps.me</string>
     <string name="name">Name:</string>
     <string name="alternative_names">Alternative names:</string>
     <string name="lat">Lat:</string>

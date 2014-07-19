@@ -1,6 +1,9 @@
-# MapsWithMe Android API: Getting Started
+# maps.me Android API: Getting Started
 
 ## Introduction
+
+NOTE: We have changed the name of our maps from MapsWithMe to maps.me, but left all references below unchanged.
+
 MapsWithMe Android API (hereinafter referred to as *"API Library"* or just *"library"*)
 provides interface for client application to perform next tasks:
 
@@ -145,7 +148,7 @@ If you have any questions please email to [api@mapswith.me][linkSupport].
 
 -------------------------------------------------------------------------------
 ## API Code License
-Copyright (c) 2013, MapsWithMe GmbH
+Copyright (c) 2014, MapsWithMe GmbH
 All rights reserved.
 
 Redistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:
