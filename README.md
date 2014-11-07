@@ -21,7 +21,7 @@ our [travel guide apps][linkTravelGuides] as an API integration example.
 
 It is supposed that you are familiar with Android Development, and you have Android SDK and Eclipse (or another IDE of your choice) installed.
 You should be familiar with concept of [Intents][linkIntents], [library projects][linkLibProj], and [PendingIntents][linkPIntent] (recommended) as well.
-Your application must target at least *android sdk version 7*.
+Your application must target at least *android sdk version 9*.
 
 ## Integration
 First step is to clone [repository][linkRepo] or download it as an archive.
