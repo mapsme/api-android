@@ -2,7 +2,7 @@
 
 ## Introduction
 
-NOTE: We have changed the name of our maps from MapsWithMe to maps.me, but left all references below unchanged.
+NOTE: We have changed the name of our maps from MapsWithMe to MAPS.ME, but left all references below unchanged.
 
 MapsWithMe Android API (hereinafter referred to as *"API Library"* or just *"library"*)
 provides interface for client application to perform next tasks:
@@ -130,13 +130,10 @@ your application when user press "More Info" button :
 `MapsWithMeApi.isMapsWithMeInstalled(Context)` will return `true` if user has *Lite* or *Pro* version that supports API call installed.
 
 #### Which versions of MapsWithMe support API calls?
-Both *Lite* and *Pro* versions since 2.4.0 and above support API calls.
+All versions since 2.4.0 and above support API calls.
 
 #### What will happen if I call for `MapsWithMeApi.showPoint()` but MapsWithMe application is not installed?
 Nothing serious. API library will show simple dialog with gentle offer to download MapsWithMe. You can see how it looks like below. ![Please install us](site/images/dlg.png)
-
-#### If user has both *Lite* and *Pro* versions which one will be called?
-MapsWithMe Pro will serve your request in the case if both *Lite* and *Pro* versions installed. 
 
 ## Sample Code and Application
 
@@ -158,12 +155,12 @@ Redistribution and use in source and binary forms, with or without modification,
 
 THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
-[linkMwm]: http://mapswith.me/ "MapsWithMe"
+[linkMwm]: http://maps.me/ "MAPS.ME"
 [linkPIntent]: http://developer.android.com/reference/android/app/PendingIntent.html "PendingIntent"
 [linkRepo]: https://github.com/mapswithme/api-android "GitHub Repository"
 [linkLibProj]: http://developer.android.com/tools/projects/index.html#LibraryProjects "Android Library Project"
 [linkIntents]: http://developer.android.com/guide/components/intents-filters.html "Intents and Intent Filters"
-[linkSupport]: mailto:api@mapswith.me "MapsWithMe Support Contact"
+[linkSupport]: mailto:api@maps.me "MAPS.ME Support Contact"
 [linkApiClass]: lib/src/com/mapswithme/maps/api/MapsWithMeApi.java "MapsWithMeApi.java"
 [linkPointClass]: lib/src/com/mapswithme/maps/api/MWMPoint.java "MWMPoint.java"
 [linkRespClass]: lib/src/com/mapswithme/maps/api/MWMResponse.java  "MWMResponse.java"
