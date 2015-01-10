@@ -22,7 +22,6 @@
 ******************************************************************************/
 package com.mapswithme.maps.api;
 
-import android.app.DownloadManager.Request;
 import android.content.Context;
 import android.content.Intent;
 
