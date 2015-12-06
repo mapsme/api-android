@@ -26,7 +26,7 @@ import java.io.Serializable;
 
 /**
  * POI wrapper object.
- * Has it's <code>equals()</code> and <code>hashCode()</code> methods overloaded
+ * Has its <code>equals()</code> and <code>hashCode()</code> methods overloaded
  * so could be used in Hash(Map/Set/etc) classes.
  */
 public final class MWMPoint implements Serializable
@@ -37,7 +37,7 @@ public final class MWMPoint implements Serializable
   final private double mLon;
   final private String mName;
   private String mId;
-  private String mStyle;
+  private Style mStyle;
 
   public MWMPoint(double lat, double lon, String name)
   {
@@ -52,7 +52,7 @@ public final class MWMPoint implements Serializable
     this.mId = id;
   }
 
-  public MWMPoint(double lat, double lon, String name, String id, String style)
+  public MWMPoint(double lat, double lon, String name, String id, Style style)
   {
     this.mLat = lat;
     this.mLon = lon;
@@ -65,7 +65,9 @@ public final class MWMPoint implements Serializable
   public double getLon()       { return mLon;   }
   public String getName()      { return mName;  }
   public String getId()        { return mId;    }
-  public String getStyle()     { return mStyle; }
+  public Style  getStyle()     { return mStyle; }
+
+  public String getStyleForUrl() { return (mStyle == null) ? null : mStyle.getName(); }
 
   /**
    * Sets string ID for this point. Internally it is not used to distinguish point,
@@ -75,19 +77,23 @@ public final class MWMPoint implements Serializable
   public void setId(String id) { mId = id; }
 
   /**
-   * Sets the style (appearance) for this point. Null, empty-string or unrecognized appears as a
-   * violet circle. Styles known to MAPS.ME appear with the appropriate symbol. At the time of
-   * writing, supported styles are "placemark-red", "placemark-blue", "placemark-purple",
-   * "placemark-yellow", "placemark-pink", "placemark-brown", "placemark-green", "placemark-orange",
-   * all of which are displayed as a small flag of the indicated colour.
-   * @param style
+   * Sets the style (appearance) for this point.
+   *
+   * @param style Style to use, or null for default (violet circle).
    */
-  public void setStyle(String style) { mId = style; }
+  public void setStyle(Style style)
+  {
+    this.mStyle = style;
+  }
 
   @Override
   public String toString()
   {
-    return "MWMPoint [lat=" + mLat + ", lon=" + mLon + ", name=" + mName + ", id=" + mId + ", style=" + mStyle + "]";
+    return "MWMPoint [lat=" + mLat +
+            ", lon=" + mLon +
+            ", name=" + mName +
+            ", id=" + mId +
+            ", style=" + mStyle + "]";
   }
 
   @Override
@@ -124,5 +130,35 @@ public final class MWMPoint implements Serializable
       return false;
 
     return mName == null ? other.mName == null : mName.equals(other.mName);
+  }
+
+  /**
+   * Supported styles for MAPS.ME. Each appears as a small flag of the appropriate colour.
+   */
+  public enum Style
+  {
+    PlacemarkRed("placemark-red"),
+    PlacemarkBlue("placemark-blue"),
+    PlacemarkPurple("placemark-purple"),
+    PlacemarkYellow("placemark-yellow"),
+    PlacemarkPink("placemark-pink"),
+    PlacemarkBrown("placemark-brown"),
+    PlacemarkGreen("placemark-green"),
+    PlacemarkOrange("placemark-orange");
+
+    private String name;
+
+    private Style(String name)
+    {
+      this.name = name;
+    }
+
+    /**
+     * @return name as it should appear in the MAPS.ME URL.
+     */
+    private String getName()
+    {
+      return name;
+    }
   }
 }
