@@ -33,7 +33,7 @@ You don't need any additional permissions in your AndroidManifest.xml to use API
 Core classes you will work with are:
 
 * [com.mapswithme.maps.api.MapsWithMeApi][linkApiClass] - static class with methods such as `showPointOnMap(Activity, double, double, String)` etc.
-* [com.mapswithme.maps.api.MWMPoint][linkPointClass] - model of POI, includes lat, lon, name, and id data.
+* [com.mapswithme.maps.api.MWMPoint][linkPointClass] - model of POI, includes lat, lon, name, id, and style data.
 * [com.mapswithme.maps.api.MWMResponse][linkRespClass] - helps you to extract response from MapsWithMe by applying `MWMResponse.extractFromIntent(Intent)` to Intent. Contains MWMPoint data.
 
 ### Show Points on the Map
