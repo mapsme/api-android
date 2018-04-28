@@ -133,7 +133,9 @@ your application when user press "More Info" button :
 All versions since 2.4.0 and above support API calls.
 
 #### What will happen if I call for `MapsWithMeApi.showPoint()` but MapsWithMe application is not installed?
-Nothing serious. API library will show simple dialog with gentle offer to download MapsWithMe. You can see how it looks like below. ![Please install us](site/images/dlg.png)
+Nothing serious. API library will show simple dialog with gentle offer to download MapsWithMe. You can see how it looks like below. 
+
+![Please install us](site/images/dlg.png)
 
 ## Sample Code and Application
 
