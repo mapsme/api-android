@@ -29,7 +29,7 @@ First step is to clone [repository][linkRepo] or download it as an archive.
 When your are done you find two folders: *lib* and *sample-app-capitals*. First one is a library project that you should add to your project.
 You don't need any additional permissions in your AndroidManifest.xml to use API library, so you can write real code straight away, calling for different `MapsWithMeApi` methods (more details below). 
 
-##Classes Overview and HOW TO
+## Classes Overview and HOW TO
 Core classes you will work with are:
 
 * [com.mapswithme.maps.api.MapsWithMeApi][linkApiClass] - static class with methods such as `showPointOnMap(Activity, double, double, String)` etc.
@@ -133,7 +133,9 @@ your application when user press "More Info" button :
 All versions since 2.4.0 and above support API calls.
 
 #### What will happen if I call for `MapsWithMeApi.showPoint()` but MapsWithMe application is not installed?
-Nothing serious. API library will show simple dialog with gentle offer to download MapsWithMe. You can see how it looks like below. ![Please install us](site/images/dlg.png)
+Nothing serious. API library will show simple dialog with gentle offer to download MapsWithMe. You can see how it looks like below. 
+
+![Please install us](site/images/dlg.png)
 
 ## Sample Code and Application
 
