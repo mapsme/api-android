@@ -46,7 +46,7 @@ public final class MapsWithMeApi
   public static void showMapsWithMeUrl(Activity caller, PendingIntent pendingIntent, double zoomLevel, String url)
   {
     final Uri uri = Uri.parse(url);
-    final String latlon[] = uri.getQueryParameter("ll").split(",");
+    final String[] latlon = uri.getQueryParameter("ll").split(",");
     final double lat = Double.parseDouble(latlon[0]);
     final double lon = Double.parseDouble(latlon[1]);
     final String name = uri.getQueryParameter("n");
