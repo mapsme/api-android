@@ -142,12 +142,9 @@ Nothing serious. API library will show simple dialog with gentle offer to downlo
 * [Sample Application at Google Play][linkSampleGooglePlay]
 * [Sample Application Source Code][linkSampleSource]
 
-## Support
-If you have any questions please email to [api@mapswith.me][linkSupport].
-
 -------------------------------------------------------------------------------
 ## API Code License
-Copyright (c) 2014, MapsWithMe GmbH
+Copyright (c) 2019, MY.COM B.V.
 All rights reserved.
 
 Redistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:
@@ -157,12 +154,11 @@ Redistribution and use in source and binary forms, with or without modification,
 
 THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
-[linkMwm]: http://maps.me/ "MAPS.ME"
+[linkMwm]: https://maps.me/ "MAPS.ME"
 [linkPIntent]: http://developer.android.com/reference/android/app/PendingIntent.html "PendingIntent"
 [linkRepo]: https://github.com/mapswithme/api-android "GitHub Repository"
 [linkLibProj]: http://developer.android.com/tools/projects/index.html#LibraryProjects "Android Library Project"
 [linkIntents]: http://developer.android.com/guide/components/intents-filters.html "Intents and Intent Filters"
-[linkSupport]: mailto:api@maps.me "MAPS.ME Support Contact"
 [linkApiClass]: lib/src/com/mapswithme/maps/api/MapsWithMeApi.java "MapsWithMeApi.java"
 [linkPointClass]: lib/src/com/mapswithme/maps/api/MWMPoint.java "MWMPoint.java"
 [linkRespClass]: lib/src/com/mapswithme/maps/api/MWMResponse.java  "MWMResponse.java"
